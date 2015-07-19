@@ -10,6 +10,10 @@ import UIKit
 import Parse
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var textField1: UITextField!
+    @IBAction func addBtn1(sender: AnyObject) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
