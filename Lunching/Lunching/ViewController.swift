@@ -13,17 +13,16 @@ class ViewController: UIViewController {
     
     @IBOutlet var textField1: UITextField!
     @IBAction func addBtn1(sender: AnyObject) {
+        let restaurantName = PFObject(className: "TestObject")
+        restaurantName["RestauranName"] = textField1.text
+        restaurantName.save()
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let testObject = PFObject(className: "TestObject")
-        testObject["foo"] = "bar"
-        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-            println("Object has been saved.")
-        }
     }
 
     override func didReceiveMemoryWarning() {
