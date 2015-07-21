@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>7C25F424-7239-45EC-9C52-011570366649</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Lunching</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B1052BCA4D931A5ADAACE6A4562119FDBA48CADE</key>
 		<string>https://github.com/keanuhusen/lunching.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Lunching/Lunching.xcodeproj/project.xcworkspace</string>
+	<string>Lunching/Lunching.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B1052BCA4D931A5ADAACE6A4562119FDBA48CADE</key>

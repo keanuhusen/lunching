@@ -26,6 +26,7 @@
 		73173F021B5ADF6D00FC60B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73173F011B5ADF6D00FC60B9 /* SystemConfiguration.framework */; };
 		73173F041B5ADF7800FC60B9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73173F031B5ADF7800FC60B9 /* libz.dylib */; };
 		73173F061B5ADF8100FC60B9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73173F051B5ADF8100FC60B9 /* libsqlite3.dylib */; };
+		739E5F5F1B5B67E7008AD52B /* LunchOptionsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E5F5E1B5B67E7008AD52B /* LunchOptionsTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		73173F011B5ADF6D00FC60B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73173F031B5ADF7800FC60B9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		73173F051B5ADF8100FC60B9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		739E5F5E1B5B67E7008AD52B /* LunchOptionsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchOptionsTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				73173ED71B5ADC1400FC60B9 /* LaunchScreen.xib */,
 				73173ECD1B5ADC1400FC60B9 /* Lunching.xcdatamodeld */,
 				73173EC91B5ADC1400FC60B9 /* Supporting Files */,
+				739E5F5E1B5B67E7008AD52B /* LunchOptionsTable.swift */,
 			);
 			path = Lunching;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				73173ED11B5ADC1400FC60B9 /* ViewController.swift in Sources */,
 				73173ECC1B5ADC1400FC60B9 /* AppDelegate.swift in Sources */,
 				73173ECF1B5ADC1400FC60B9 /* Lunching.xcdatamodeld in Sources */,
+				739E5F5F1B5B67E7008AD52B /* LunchOptionsTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 				73173EEA1B5ADC1400FC60B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73173EEB1B5ADC1400FC60B9 /* Build configuration list for PBXNativeTarget "LunchingTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				73173EED1B5ADC1400FC60B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

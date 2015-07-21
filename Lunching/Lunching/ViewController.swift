@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var textField1: UITextField!
     @IBAction func addBtn1(sender: AnyObject) {
         let restaurantName = PFObject(className: "TestObject")
-        restaurantName["RestauranName"] = textField1.text
+        restaurantName["RestaurantName"] = textField1.text
         restaurantName.save()
         
     }
