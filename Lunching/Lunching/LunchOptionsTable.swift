@@ -12,6 +12,8 @@ class LunchOptionsTable: UIViewController, UITableViewDataSource, UITableViewDel
     
     var optionItems: [String] = []
     
+    let data = Data()
+    
     @IBOutlet var addLunchOption: UITextField!
     
     @IBAction func addLunchButton(sender: AnyObject) {
@@ -47,7 +49,7 @@ class LunchOptionsTable: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return optionItems.count
+        return data.choiceText.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -58,7 +60,9 @@ class LunchOptionsTable: UIViewController, UITableViewDataSource, UITableViewDel
         let cell = tableView.dequeueReusableCellWithIdentifier("optionCell", forIndexPath: indexPath) as! UITableViewCell
         
         // Configure the cell...
-        cell.textLabel?.text = self.optionItems[indexPath.row]
+        let entry = data.choiceText[indexPath.row]
+        
+        cell.textLabel?.text = entry.allChoices
         
         return cell
     }
