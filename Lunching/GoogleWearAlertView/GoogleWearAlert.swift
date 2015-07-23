@@ -2,9 +2,6 @@
 //  GoogleWearAlert.swift
 //  GoogleWearAlertView
 //
-//  Created by Ashley Robinson on 27/06/2014.
-//  Copyright (c) 2014 Ashley Robinson. All rights reserved.
-//
 
 import UIKit
 import Foundation

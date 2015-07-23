@@ -4,6 +4,7 @@
 //
 //  Created by Apple User on 7/23/15.
 //  Copyright (c) 2015 Keanu Husen. All rights reserved.
+//  Copyright (c) 2015 Bryan Orozco. All rights reserved.
 //
 
 import UIKit
@@ -79,6 +80,7 @@ class RandomViewController: UIViewController {
             let randomIndex = Int(arc4random_uniform(UInt32(self.optionList.count)))
             let randomEmojiIndex = Int(arc4random_uniform(UInt32(self.randomEmojis.count)))
             winer.text = "You're going to " + self.optionList[randomIndex] + randomEmojis[randomEmojiIndex]
+            GoogleWearAlert.showAlert(title: "\(self.optionList[randomIndex] + randomEmojis[randomEmojiIndex]) it is ", type: .Success)
         }else{
              GoogleWearAlert.showAlert(title:"Enter a Shop 😩", image:nil, type: .Error, duration: 1.5, inViewController: self)
             //self.presentViewController(alertFail!, animated: true, completion: nil)
