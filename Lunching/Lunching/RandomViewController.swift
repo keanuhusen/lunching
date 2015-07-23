@@ -12,13 +12,17 @@ class RandomViewController: UIViewController {
     
     var optionList:[String] = []
     var counter:Int = 0
+    var randomEmojis:[String] = ["👍", "😁!!", "👌", "🍡", "😎"]
     
+    
+    @IBOutlet weak var silverWare: UIButton!
     
     @IBOutlet weak var randomLable: UILabel!
     
     @IBOutlet weak var winer: UILabel!
-    
-    @IBAction func randomizer(sender: AnyObject) {
+    @IBAction func Additem(sender: AnyObject) {
+        
+        
         var alertController: UIAlertController?
         
         alertController = UIAlertController(title: "Must be hungry", message: "Enter the places nearby", preferredStyle: .Alert)
@@ -35,26 +39,59 @@ class RandomViewController: UIViewController {
                 if let textFields = alertController?.textFields{
                     let theTextFields = textFields as! [UITextField]
                     let enteredText = theTextFields[0].text
-                    self!.randomLable.text = enteredText + "!!!😩"
-                    self!.optionList.append(enteredText)
+                    let randomEmojiIndexLable = Int(arc4random_uniform(UInt32(self!.randomEmojis.count)))
                     
-                }  
+                    self!.randomLable.text = enteredText + " " + self!.randomEmojis[randomEmojiIndexLable] + " was added"
+                    self!.optionList.append(enteredText)
+                    /* I Was thinking that maybe if someone doesn't care they leave it blank 
+                    for(var index = 0; index <= self!.optionList.count; ++index){
+                        if(self!.optionList[index] != " "){
+                            self!.optionList.removeAtIndex(index)
+                        }
+                    }*/
+                    
+                }
             })
         
         alertController?.addAction(action)
         self.presentViewController(alertController!, animated: true, completion: nil)
         
-    if(self.optionList.count > 4)
-    {
-        let randomIndex = Int(arc4random_uniform(UInt32(self.optionList.count)))
-        winer.text = self.optionList[randomIndex]
-    }
+        
+        
         
     }
+    
+    @IBAction func randomizer(sender: AnyObject) {
+        
+        var alertFail: UIAlertController?
+        
+        alertFail = UIAlertController(title: "Ooops", message: "BRUH if it's just one choice go there", preferredStyle: .Alert)
+        
+        
+      
+
+
+        
+        if(self.optionList.count > 1)
+        {
+            let randomIndex = Int(arc4random_uniform(UInt32(self.optionList.count)))
+            let randomEmojiIndex = Int(arc4random_uniform(UInt32(self.randomEmojis.count)))
+            winer.text = "You're going to " + self.optionList[randomIndex] + randomEmojis[randomEmojiIndex]
+        }else{
+            println("bo")
+            self.presentViewController(alertFail!, animated: true, completion: nil)
+            //Delay 
+            
+        }
+
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lunching/RandomViewController.swift"
-            timestampString = "459338008.499826"
+            timestampString = "459366387.681872"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "randomizer(_:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "Additem(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lunching.RandomViewController.(Additem (Lunching.RandomViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #2)"
+                  moduleName = "Lunching"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/appleuser/lunching/Lunching/Lunching/RandomViewController.swift"
+                  timestampString = "459362200.097871"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2328">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Lunching.RandomViewController.(Additem (Lunching.RandomViewController) -&gt; (Swift.AnyObject) -&gt; ()).(closure #2)"
+                  moduleName = "Lunching"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/appleuser/lunching/Lunching/Lunching/RandomViewController.swift"
+                  timestampString = "459362200.10087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "2355">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
