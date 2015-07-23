@@ -27,6 +27,12 @@
 		73173F041B5ADF7800FC60B9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73173F031B5ADF7800FC60B9 /* libz.dylib */; };
 		73173F061B5ADF8100FC60B9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73173F051B5ADF8100FC60B9 /* libsqlite3.dylib */; };
 		739E5F5F1B5B67E7008AD52B /* LunchOptionsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E5F5E1B5B67E7008AD52B /* LunchOptionsTable.swift */; };
+		85622C0E1B6182B500BD1018 /* GoogleWearAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85622C071B6182B500BD1018 /* GoogleWearAlert.swift */; };
+		85622C0F1B6182B500BD1018 /* GoogleWearAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85622C081B6182B500BD1018 /* GoogleWearAlertView.swift */; };
+		85622C101B6182B500BD1018 /* errorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85622C0A1B6182B500BD1018 /* errorIcon@2x.png */; };
+		85622C111B6182B500BD1018 /* messageIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85622C0B1B6182B500BD1018 /* messageIcon@2x.png */; };
+		85622C121B6182B500BD1018 /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85622C0C1B6182B500BD1018 /* successIcon@2x.png */; };
+		85622C131B6182B500BD1018 /* warningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85622C0D1B6182B500BD1018 /* warningIcon@2x.png */; };
 		8590CF3A1B60E8070034E709 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8590CF391B60E8070034E709 /* RandomViewController.swift */; };
 		85EF09C41B5F327000C049E7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EF09C31B5F327000C049E7 /* Data.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +72,12 @@
 		73173F031B5ADF7800FC60B9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		73173F051B5ADF8100FC60B9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		739E5F5E1B5B67E7008AD52B /* LunchOptionsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchOptionsTable.swift; sourceTree = "<group>"; };
+		85622C071B6182B500BD1018 /* GoogleWearAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWearAlert.swift; sourceTree = "<group>"; };
+		85622C081B6182B500BD1018 /* GoogleWearAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWearAlertView.swift; sourceTree = "<group>"; };
+		85622C0A1B6182B500BD1018 /* errorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorIcon@2x.png"; sourceTree = "<group>"; };
+		85622C0B1B6182B500BD1018 /* messageIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageIcon@2x.png"; sourceTree = "<group>"; };
+		85622C0C1B6182B500BD1018 /* successIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successIcon@2x.png"; sourceTree = "<group>"; };
+		85622C0D1B6182B500BD1018 /* warningIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warningIcon@2x.png"; sourceTree = "<group>"; };
 		8590CF391B60E8070034E709 /* RandomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		85EF09C31B5F327000C049E7 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +115,7 @@
 		73173EBD1B5ADC1400FC60B9 = {
 			isa = PBXGroup;
 			children = (
+				85622C061B6182B500BD1018 /* FancyAlerts */,
 				73173EEE1B5ADEB200FC60B9 /* Frameworks */,
 				73173EC81B5ADC1400FC60B9 /* Lunching */,
 				73173EE11B5ADC1400FC60B9 /* LunchingTests */,
@@ -178,6 +191,28 @@
 				73173EF01B5ADED800FC60B9 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85622C061B6182B500BD1018 /* FancyAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				85622C071B6182B500BD1018 /* GoogleWearAlert.swift */,
+				85622C081B6182B500BD1018 /* GoogleWearAlertView.swift */,
+				85622C091B6182B500BD1018 /* Resources */,
+			);
+			name = FancyAlerts;
+			path = GoogleWearAlertView;
+			sourceTree = "<group>";
+		};
+		85622C091B6182B500BD1018 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85622C0A1B6182B500BD1018 /* errorIcon@2x.png */,
+				85622C0B1B6182B500BD1018 /* messageIcon@2x.png */,
+				85622C0C1B6182B500BD1018 /* successIcon@2x.png */,
+				85622C0D1B6182B500BD1018 /* warningIcon@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +295,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85622C101B6182B500BD1018 /* errorIcon@2x.png in Resources */,
+				85622C121B6182B500BD1018 /* successIcon@2x.png in Resources */,
 				73173ED41B5ADC1400FC60B9 /* Main.storyboard in Resources */,
 				73173ED91B5ADC1400FC60B9 /* LaunchScreen.xib in Resources */,
+				85622C131B6182B500BD1018 /* warningIcon@2x.png in Resources */,
 				73173ED61B5ADC1400FC60B9 /* Images.xcassets in Resources */,
+				85622C111B6182B500BD1018 /* messageIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +322,9 @@
 				73173ED11B5ADC1400FC60B9 /* ViewController.swift in Sources */,
 				85EF09C41B5F327000C049E7 /* Data.swift in Sources */,
 				73173ECC1B5ADC1400FC60B9 /* AppDelegate.swift in Sources */,
+				85622C0F1B6182B500BD1018 /* GoogleWearAlertView.swift in Sources */,
 				8590CF3A1B60E8070034E709 /* RandomViewController.swift in Sources */,
+				85622C0E1B6182B500BD1018 /* GoogleWearAlert.swift in Sources */,
 				73173ECF1B5ADC1400FC60B9 /* Lunching.xcdatamodeld in Sources */,
 				739E5F5F1B5B67E7008AD52B /* LunchOptionsTable.swift in Sources */,
 			);
