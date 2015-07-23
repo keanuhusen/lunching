@@ -3,7 +3,7 @@
 //  Lunching
 //
 //  Created by Apple User on 7/21/15.
-//  Copyright (c) 2015 Keanu Husen. All rights reserved.
+//  Copyright (c) 2015 Bryan Orozco. All rights reserved.
 //
 
 import Foundation
