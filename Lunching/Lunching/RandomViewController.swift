@@ -65,8 +65,10 @@ class RandomViewController: UIViewController {
         
         var alertFail: UIAlertController?
         
-        alertFail = UIAlertController(title: "Ooops", message: "BRUH if it's just one choice go there", preferredStyle: .Alert)
+        alertFail = UIAlertController(title: "BRUH!", message: "If it's just one choice...", preferredStyle: .Alert)
         
+        alertFail?.addAction(UIAlertAction(title: "GO THERE!", style: .Default, handler: { (action: UIAlertAction!) in
+        }))
         
       
 
@@ -78,7 +80,6 @@ class RandomViewController: UIViewController {
             let randomEmojiIndex = Int(arc4random_uniform(UInt32(self.randomEmojis.count)))
             winer.text = "You're going to " + self.optionList[randomIndex] + randomEmojis[randomEmojiIndex]
         }else{
-            println("bo")
             self.presentViewController(alertFail!, animated: true, completion: nil)
             //Delay 
             
