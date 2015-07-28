@@ -15,6 +15,8 @@ class RandomViewController: UIViewController {
     var counter:Int = 0
     var randomEmojis:[String] = ["👍", "😁!!", "👌", "🍡", "😎"]
     
+    // we need to add core data for this
+    @IBOutlet weak var jujuScore: UILabel!
     
     @IBOutlet weak var silverWare: UIButton!
     
@@ -79,8 +81,18 @@ class RandomViewController: UIViewController {
         {
             let randomIndex = Int(arc4random_uniform(UInt32(self.optionList.count)))
             let randomEmojiIndex = Int(arc4random_uniform(UInt32(self.randomEmojis.count)))
+            if(counter < 1){
+                 GoogleWearAlert.showAlert(title: "Not going here will give bad juju", type: .Warning)
+                ++counter
+            }else{
+                
             winer.text = "You're going to " + self.optionList[randomIndex] + randomEmojis[randomEmojiIndex]
             GoogleWearAlert.showAlert(title: "\(self.optionList[randomIndex] + randomEmojis[randomEmojiIndex]) it is ", type: .Success)
+            ++counter
+            println("\(counter)")
+            badJuju(counter)
+                
+            }
         }else{
              GoogleWearAlert.showAlert(title:"Enter a Shop 😩", image:nil, type: .Error, duration: 1.5, inViewController: self)
             //self.presentViewController(alertFail!, animated: true, completion: nil)
@@ -89,6 +101,12 @@ class RandomViewController: UIViewController {
         }
 
         
+    }
+    
+    func badJuju(jujuCount:Int ){
+        if(jujuCount > 2){
+            self.jujuScore.text = "Juju score: - \(jujuCount)"
+        }
     }
     
     override func viewDidLoad() {
